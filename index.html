@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+</head>
+
+
+
+<style>
+
+
+
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.9);
+  padding: 15px 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #00e5ff;
+}
+
+
+
+
+
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+  url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 700px;
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.btn {
+  padding: 12px 30px;
+  background: #00e5ff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #00bcd4;
+}
+
+/* SECTION */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.section p {
+  max-width: 800px;
+  margin: auto;
+  color: #bbb;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 8px;
+  min-width: 200px;
+}
+
+.stat-box h3 {
+  font-size: 28px;
+  color: #00e5ff;
+}
+
+/* FOOTER */
+.footer {
+  background: #000;
+  padding: 20px;
+  text-align: center;
+  color: #777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 120px 20px;
+  }
+
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
+section {
+  scroll-margin-top: 80px; /* adjust to your navbar height */
+}
+
+#investment {
+  scroll-behavior: smooth;
+}
+
+
+.footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+
+
+
+
+
+/* Ensure image is responsive */
+
+
+
+
+.image-container {
+  width: 100%;        /* container fills full width of page */
+  max-width: 1300px;  /* optional max width for desktop */
+  margin: 0 auto;     /* centers container */
+  padding: 10 20px;
+  margin-top: 30pxx;/* optional spacing */
+}
+
+.image-container img {
+  width: 100%;        /* image fills container width */
+  height: auto;       /* keeps aspect ratio */
+  display: block;     /* removes small gaps below image */
+  
+}
+
+
+
+
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* stops sideways scrolling */
+}
+
+
+.navbar {
+  position: fixed; /* fixes navbar at the top */
+  top: 0;          /* top of the page */
+  left: 0;
+  right: 0;
+  z-index: 1000;   /* ensures it stays above other content */
+  background-color: #222; /* keep background so content behind is hidden */
+}
+
+
+h2 { color: black;
+     text-align:}
+
+
+
+body{
+font-family: sans-serif;
+font-size: 15px;
+line-height: 1.5;
+padding: 0;
+margin: 0;
+width: 100%;
+background-color: white;
+
+}
+
+
+/*newsletter*/
+#newsletter{
+	padding: 15px;
+	color: black;
+	background: whitesmoke;
+	border-bottom:  ;
+}
+
+#newsletter h1{
+	float: left;
+    height: 35px;
+	background: whitesmoke;
+	color: black;
+	border-radius: 8px;
+	font-size: 20px;
+	margin-top: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#newsletter form{
+	float: right;
+	margin: 25px;
+	height: 10px;
+}
+
+#newsletter input[type="email"]{
+	padding: 4px;
+	height: 20px;
+	width: 250px;
+}
+
+
+.button_1{
+	height: 75px;
+	background: dodgerblue;
+	color: white;
+	border: none;
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    background-color: #222;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .dropdown-content {
+    position: static;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+
+
+#
+
+
+
+#newsletter{ Ke 
+	padding: 15px;
+	color: black;
+    width: 470px;
+	background: whitesmoke;
+	;
+}
+
+
+
+#newsletter form{
+	float: right;
+	margin: 5px;
+	height: 50px;
+}
+
+#newsletter input[type="email"]{
+	padding: 6px;
+	margin-right: 20px;
+	height: 20px;
+	width: 250px;
+}
+
+
+.button {
+	height: 35px;
+	background: dodgerblue;
+	color: white;
+	border: none;
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+
+
+#newsletter h1{
+    height: 35px;
+	background: black;
+	color: white;
+
+	font-size: 20px;
+	margin-right: 20px;
+	margin-top: 15px;
+	padding: 11px;
+}
+
+
+	
+
+
+.consult{
+		padding: 7px;
+		margin-top: 9px;
+		margin-left: 50px;
+		margin-right: 50px;
+		border-radius: 10px;
+		text-decoration: none;
+		background-color: dodgerblue;
+	}
+
+	.consult a{
+		font-size: 15px;
+		color: whitesmoke;
+		font-family: ;
+		text-decoration: none;
+	}
+#investment {;
+        
+    }
+
+
+a{
+        font-size: 19px;
+        color: black;
+        font-family:Sans-Serif ;
+        
+    }
+
+
+h3{
+	margin-left:70px;
+	color: black;
+}
+
+
+#example { color: black;
+         padding: 10px;
+         height: 100%;
+       margin-left: 20px;
+         margin-right: 20px;
+        box-shadow:2px 2px 2px 3px , 2px 2px 2px 3px  black;
+        align-items: center;
+    
+    
+            }
+    
+}
+
+
+</style>
+
+
+
+
+<body>
+
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Strategic Trading. Smart Growth.</h1>
+  <p>
+    We combine disciplined market analysis with structured risk management to provide intelligent investment opportunities in Forex and digital asset markets.
+  </p>
+
+    <a href="#investment" class="btn">View Investment Plans</a>
+   <ul class="btn"><a href="mailto:ajmaine93@gmail.com">Schedule a consultant</a></ul>
+   
+   <br><br>
+
+        <button  type="button"onclick="alert('Schedule a consultant for more information')">Need an account</button>
+      
+
+</div>
+
+<!-- ABOUT SECTION -->
+<div class="section">
+  <h2>Why Choose Smart Forex Trading Investment</h2>
+  <p style="color: black">
+<p01 style="font-size: 50px;">G</p01>row Your Capital With Structured, Risk-Managed Trading At Smart Forex Trading Investment, we provide disciplined and strategic exposure to the global Forex market. Our focus is not on unrealistic promises, but on consistent growth, capital protection, and transparency.
+  
+  We combine market analysis, technical strategy, and strict risk management to pursue sustainable returns for our investors.
+  
+  
+  📊 What We Do
+  
+  We trade the global currency markets using:   Technical and price-action analysis, Risk-controlled position sizing, Structured entry and exit strategies, Ongoing performance monitoring
+   no 
+  Our objective is simple:
+  Protect capital first. Grow capital consistently.
+  </p>
+
+  <div class="stats">
+    <div class="stat-box">
+      <h3>Strategic</h3>
+      <p>Market Analysis</p>
+    </div>
+
+    <div class="stat-box">
+      <h3>Disciplined</h3>
+      <p>Risk Management</p>
+    </div>
+
+    <div class="stat-box">
+      <h3>Transparent</h3>
+      <p>Client Communication</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Image Container -->
+<div class="image-container">
+  <img src="https://64.media.tumblr.com/805b4eecf87b511316c43fbacd2bf6c2/25a5f2472b0522ea-08/s1280x1920/d0d2090cafd46b47ce386903b41499176d85821f.pnj" alt="Banner Image">
+</div>
+
+
+
+
+ 
+
+
+
+  <h2 style="font-size: 16px;">
+  
+
+  
+
+
+
+  </h2>
+  
+  
+  
+  <br>
+   
+
+<br><br>
+  <h3>💼 Why Invest With Us?<br>
+  
+  ✔ Professional risk management approach<br>
+  ✔ Transparent performance reporting<br>
+  ✔ Structured investment plans<br>
+  ✔ Clear profit-sharing model<br>
+  ✔ Flexible withdrawal options<br>
+  
+  band consistency.</h3>
+
+
+  <br><br>
+
+   <br><br>
+
+<div id="example">
+	
+		<p#p01>
+ <p style="font-family: Bahnschrift Light;">
+  <p01 style="font-size: 37px;"><ins>Our Investment Approach</ins></p01>
+  </p>
+  
+  <br><br>
+  
+     <br><br>
+</p#p01>
+  <p style="font-family:Century751 SeBd BT ;" >Our trading model is designed around: Controlled position sizing,  Pre-defined risk per trade, Diversified currency exposure,  Ongoing market monitoring, Clear profit targets and exit strategies
+  
+  Every decision is guided by analysis — not emotion.
+   <br><br>
+
+   <br><br>
+
+
+
+
+  <p#p01>
+  <p style="font-size:36px;">
+  <p01 style="font-family: Bahnschrift Light;"><ins>What You should be Expecting</ins></p01>
+  </p>
+</p#p01>
+  <br> <br>
+   <br><br>
+  
+
+  <p style="font-family:Palatino Linotype ;">
+  <p01 style="font-size: 17px;">  A structured and disciplined trading strategy, Realistic, market-dependent returns, Regular performance reporting, Clear communication and accountability
+  
+  We believe informed investors make confident investors.<br></p01>
+  </p>
+
+  <br><br>
+  
+     <br><br>
+  <p style="font-size: 37px;">
+  <p01 style="font-family: Palatino Linotype;"><ins>Who This Is For
+  </ins>  </p01>
+  </p>
+
+   <br><br> 
+   <br><br>
+   
+  
+  <p>This opportunity is suitable for individuals who:<br>
+      •    Want passive exposure to financial markets<br>
+      •    Understand that trading involves risk<br>
+      •    Prefer professional strategy management<br>
+      •    Value steady, long-term capital growth
+  </p>
+   <br><br>
+   <br><br>
+
+
+  <p style="font-size: 37px;">
+  <p01 style="font-family: Palatino Linotype;"><ins>Trade with Precision. Invest with Confidence. </ins></p01>
+  </p> 
+  
+  <br><br>
+  
+     <br><br>
+
+  <p style="font-family:Century751 SeBd BT ;">At Smart Forex Trading Investment, we provide disciplined access to global currency markets through structured, data-driven strategies designed to preserve and grow capital.
+  
+  Our philosophy is simple:
+  
+  Capital protection comes first. Performance follows discipline.
+  
+  We focus on controlled exposure, strategic market timing, and calculated risk allocation — not speculation..</p>
+  
+   <br><br>
+   <br><br>
+  
+
+  <p style="font-size: 37px;">
+  <p01 style="font-family: Century751 SeBd BT;"><ins>Why Investors Choose Us</ins> </p01>
+  </p>
+
+   <br><br>
+   <br><br>
+
+
+  <p style="font-size: 18px;">
+  <p01 style="font-family: Century751 SeBd BT;">•  Structured capital management<br>
+  •  Advanced technical and market analysis<br>
+  •  Strict risk-to-reward frameworks<br>
+  •  Transparent performance reporting<br>
+  •  Professional portfolio oversight<br><br>
+  
+  We do not promise unrealistic returns. We deliver structured opportunities guided by strategy and experience.
+  </p01>
+  </p>
+   <br><br>
+   <br><br>
+
+  <p style="font-size: 37px;">  
+  <p01 style="font-family: Century751 SeBd BT;"><ins>Designed for Serious Investor</ins></p01>
+  </p>
+   <br><br>
+   <br><br>
+
+  <p style="font-size: 18px;">
+  <p01 style="font-family:Century751 SeBd BT ;">
+This opportunity is ideal for individuals seeking professional exposure to forex markets while maintaining a disciplined, long-term growth outlook.
+         
+         Global markets move every day. The question is — is your capital positioned correctly?
+         
+         👉 Start Your Investment Journey Today
+         
+  </p01>
+  </p>
+   <br><br>
+   <br><br>
+
+  <p style="font-family: Century751 SeBd BT;">
+  <p01 style="font-size: 37px;"><ins>💼 INVESTMENT PLANS SECTION</ins></p01>
+  </p>
+   <br><br>
+   <br><br>
+
+<h2 id="investment">Our Investment Plans</h2>
+<p>We offer flexible forex trading investment packages...</p>
+
+<br><br><br><br><br>
+
+
+<li><a href="#plans">Investment Plans</a></li>
+
+
+   <br><br>
+
+   <br><br>
+
+
+  <p style="font-size: 18px;">
+  <p01 style="font-family:Century751 SeBd BT ;"><p style="font-size: 25px;" >Starter plan</p>
+  
+  Minimum Investment: $500
+  Target Strategy: Conservative Growth
+  Risk Level: Low–Moderate
+  Best For: First-time investors
+  
+  </p01>
+  </p>
+   <br><br>
+   <br><br>
+
+  <p style="font-size: 35px;">  
+  <p01 style="font-family: Century751 SeBd BT;"><p style="font-size: 25px;">Growth Plan </p>
+  
+  Minimum Investment: $2,000
+  Target Strategy: Balanced Risk Allocation
+  Risk Level: Moderate
+  Best For: Long-term investors
+  </p></p>
+  
+  </p01>
+  </p>
+   <br><br>
+   <br><br>
+
+  <p style="font-size: 18px;">
+  <p01 style="font-family:century751 seBd BT;"><p style="font-size: 25px;">Premium Plan </p>
+  
+  Minimum Investment: 5,000+
+  Target Strategy: Active Market Allocation
+  Risk Level: Moderate–High
+  Best For: Experienced investors
+  </p01>
+  </p>
+   <br><br>
+   <br><br>
+
+  <p style="font-size: 37px;">
+  <p01 style="font-family:century751 seBd BT;">
+  <ins>📣 STRONG CALL-TO-ACTION SECTION</ins>
+  </p01>
+  </p>
+   <br><br>
+   <br><br>
+
+  <p style="font-size:18px;">
+  <p01 style="font-family: century751 seBd BT;">
+Ready to Position Your Capital Strategically?
+    
+    The forex market moves every day. Opportunity exists — but strategy determines outcome.
+    
+    Take the next step toward structured market participation.<br>
+    
+    👉 Open an Investment Account.<br>
+    👉 schedule a consultant.<br>
+    
+  </p01>
+  </p>
+   <br><br>
+   <br><br>
+
+  <p style="font-size: 45px ;">
+  <p01 style="font-family: century751 seBd BT;">
+❓ FAQ SECTION
+  </p01>
+  </p> 
+   <br><br>
+   <br><br>
+
+  <p style="font-size: 20px ;">
+  <p01 style="font-family: century751 seBd BT;">
+Is my capital guaranteed?
+  
+  All trading involves risk. While we implement strict risk management systems, market performance cannot be guaranteed.
+  </p01>
+  </p>
+   <br><br>
+   <br><br>
+
+  <p style="font-size: 18px;">
+  <p01 style="font-family: century751 seBd BT;">
+How are profits generated?
+  
+  Profits are generated through strategic forex market participation using structured analysis and risk-controlled trade execution.
+  </p01>
+  </p>
+
+   <br><br>
+   <br><br>
+  
+  <p style="font-size: 18px ;">
+  <p01 style="font-family: century751 seBd BT;">
+Can I withdraw my capital?
+     
+     Yes. Withdrawal terms depend on your selected investment plan. Details are provided before commitment.
+  </p01>
+  </p>
+   <br><br>
+   <br><br>
+
+  <p style="font-size: 18px;">
+  <p01 style="font-family: century751 seBd BT;">
+  How often do you trade?
+  
+  Trading frequency depends on market conditions. We only execute trades that meet our defined strategy criteria..
+  </p01>
+  </p>
+
+
+   <br><br>
+   <br><br>
+  
+
+
+  <p style="font-size: 30px ;">
+  <p01 style="font-family: century751 seBd BT;">
+We are not here to promise unrealistic returns.
+  We are here to provide disciplined access to opportunity.
+  
+  Growth favors the structured.</p01>
+  
+   <br><br   <br><br>
+   
+
+<a href="#">Back to Top</a>
+
+
+</div>
+
+<br><br>
+   <br><br>
+   <br><br>
+   <br><br>
+ <section id="newsletter">
+    <div class="btn">
+        <a>subscribe to our Newsletter</a>
+        
+<br><br>
+           <br><br>
+           <br>
+<br>
+           <br><br>
+           <br>
+                    <input type="email" placeholder="Enter Email">
+<br><br>
+                       <br><br>
+                       <br>
+                    
+            <a href="btn" type="submit" class="btn">Subscribe</a>
+        
+    </div>
+</section>
+<br><br>
+   <br><br>
+   <br><br>
+   <br><br>
+   <br><br>
+
+<div class="matting" style="text-align: center;">
+</div>
+<footer class="footer">
+	  <div class="footer-container">
+	    <p>© 2022 Smart Forex Trading Investment. All Rights Reserved.</p>
+	  </div>
+	</footer>
+
+</body>
+</html>
